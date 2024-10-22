@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../Images/Service.jpg');
+    background-image: url('Service.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

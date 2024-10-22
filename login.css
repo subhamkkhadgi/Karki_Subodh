@@ -3,6 +3,30 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('SignupBG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* opacity: 0.8;  */
+    z-index: -1; 
+}
+
 :root {
     --navbar-height: 59px;
 }
@@ -74,27 +98,27 @@
 #nav-buttons button {
     padding: 8px 20px;
     border: 1px solid transparent;
-    background-color: #8b8888; /* Dark gray for default background */
+    background-color: #8b8888; 
     font-weight: bold;
     color: white;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .login-btn {
-    background-color: #2c3e50; /* Login button specific color */
+    background-color: #2c3e50; 
 }
 
 .signup-btn {
-    background-color: #e74c3c; /* SignUp button specific color */
+    background-color: #e74c3c; 
 }
 
 #nav-buttons button:hover {
     border: 1px solid #ffffff;
-    transform: translateY(-3px); /* Slight lift effect on hover */
-    background-color: #7bc2fc; /* Hover background color */
+    transform: translateY(-3px); 
+    background-color: #7bc2fc; 
     color: rgb(0, 0, 0);
 }
 
@@ -138,49 +162,6 @@
     display: block;
 }
 
-#home {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-}
-/* body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('../Images/LoginBackground.webp') no-repeat center center fixed;
-    background-size: cover;
-} */
-
-body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../Images/SignupBG.jpg') no-repeat center center fixed;
-    background-size: cover;
-    /* opacity: 0.8;  */
-    z-index: -1; 
-}
-
 .container {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.3);
@@ -188,12 +169,11 @@ body::before {
     border-radius: 15px;
     width: 350px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
 }
+
 h2{
     text-align: center;
 }
-
 .form-section form {
     display: flex;
     flex-direction: column;
@@ -219,21 +199,14 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.login-link,
-.google-signup {
+.forgot-password,
+.signup-link {
     margin-top: 10px;
     text-align: center;
 }
 
-.login-link a,
-.google-signup a {
+.forgot-password a,
+.signup-link a {
     text-decoration: none;
     color: #007bff;
-}
-
-.google-signup a {
-    background-color: #4285f4;
-    color: white;
-    padding: 10px;
-    border-radius: 4px;
 }
